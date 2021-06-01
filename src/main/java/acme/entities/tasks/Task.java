@@ -49,7 +49,7 @@ public class Task extends DomainEntity {
     protected Double workload;
     
     @NotNull
-    protected Double fake_workload;
+    protected Double fakeWorkload;
     
     @NotNull
     protected Boolean privacy;
