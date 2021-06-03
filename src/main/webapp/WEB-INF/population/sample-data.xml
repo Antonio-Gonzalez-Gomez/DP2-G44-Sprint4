@@ -174,7 +174,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/05 12:00"/>
 		<property name="workload" value="6.0"/>
-		<property name="fake_workload" value="6.0"/>
+		<property name="fakeWorkload" value="6.0"/>
 		<property name="finished" value="true"/>
 		<property name="privacy" value="true"/>
 		<property name="executionPeriod" value="50"/>
@@ -189,7 +189,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/05 12:00"/>
 		<property name="workload" value="7.0"/>
-		<property name="fake_workload" value="7.0"/>
+		<property name="fakeWorkload" value="7.0"/>
 		<property name="finished" value="true"/>
 		<property name="privacy" value="false"/>
 		<property name="executionPeriod" value="50"/>
@@ -204,7 +204,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/05 12:00"/>
 		<property name="workload" value="8.0"/>
-		<property name="fake_workload" value="8.0"/>
+		<property name="fakeWorkload" value="8.0"/>
 		<property name="finished" value="false"/>
 		<property name="privacy" value="true"/>
 		<property name="executionPeriod" value="50"/>
@@ -219,7 +219,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/06 12:00"/>
 		<property name="workload" value="5.0"/>
-		<property name="fake_workload" value="5.0"/>
+		<property name="fakeWorkload" value="5.0"/>
 		<property name="finished" value="false"/>
 		<property name="privacy" value="true"/>
 		<property name="executionPeriod" value="74"/>
@@ -234,7 +234,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/06 12:00"/>
 		<property name="workload" value="10.0"/>
-		<property name="fake_workload" value="10.0"/>
+		<property name="fakeWorkload" value="10.0"/>
 		<property name="finished" value="true"/>
 		<property name="privacy" value="false"/>
 		<property name="executionPeriod" value="74"/>
@@ -249,7 +249,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/06 12:00"/>
 		<property name="workload" value="9.0"/>
-		<property name="fake_workload" value="9.0"/>
+		<property name="fakeWorkload" value="9.0"/>
 		<property name="finished" value="true"/>
 		<property name="privacy" value="false"/>
 		<property name="executionPeriod" value="74"/>
@@ -264,7 +264,7 @@
 		<property name="startDate" value="2021/04/03 10:00"/>
 		<property name="endingDate" value="2021/04/06 12:00"/>
 		<property name="workload" value="9.0"/>
-		<property name="fake_workload" value="9.0"/>
+		<property name="fakeWorkload" value="9.0"/>
 		<property name="finished" value="false"/>
 		<property name="privacy" value="false"/>
 		<property name="executionPeriod" value="74"/>

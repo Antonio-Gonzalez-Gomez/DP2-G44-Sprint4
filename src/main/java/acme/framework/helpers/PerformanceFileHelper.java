@@ -125,6 +125,7 @@ public class PerformanceFileHelper {
 		description = String.format("\"%s\"", context.getDisplayName().replace("\"", "'"));
 		exception = (context.getExecutionException().isPresent() ? context.getExecutionException().get().getLocalizedMessage() : "OK");
 
+		
 		result = new StringBuilder();
 		result.append(timestamp);
 		result.append(",");
