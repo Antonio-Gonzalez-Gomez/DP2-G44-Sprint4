@@ -125,6 +125,7 @@ public class PerformanceFileHelper {
 		exception = context.getExecutionException();
 		message = exception.isPresent() ? exception.get().getLocalizedMessage() : "OK";
 
+		
 		result = new StringBuilder();
 		result.append(timestamp);
 		result.append(",");

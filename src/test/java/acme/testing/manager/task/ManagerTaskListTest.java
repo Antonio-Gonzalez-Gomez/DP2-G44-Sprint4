@@ -27,7 +27,7 @@ public class ManagerTaskListTest extends AcmeOneTest {
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("startDate", startDate);
 		super.checkInputBoxHasValue("endingDate", endingDate);
-		super.checkInputBoxHasValue("fake_workload", workload);
+		super.checkInputBoxHasValue("fakeWorkload", workload);
 		super.checkInputBoxHasValue("finished", finished);
 		super.checkInputBoxHasValue("privacy", privacy);
 		
