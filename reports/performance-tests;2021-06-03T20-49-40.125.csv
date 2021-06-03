@@ -1,6 +1,0 @@
-timestamp,test-class,test-method,time,description,result
-2021-06-03 20:50:21.129,acme.testing.anonymous.shout.AnonymousShoutListTest,listShout,4430,"[1] recordIndex=0, moment=2021/06/01 12:30, author=Luke Skywalker, text=May the 4th be with you",OK
-2021-06-03 20:50:49.834,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositiveShout,6818,"[1] recordIndex=1, moment=2021/06/10 10:30, author=BB8, text=Bip Bop Bip",OK
-2021-06-03 20:50:53.736,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegativeShout,3082,"[1] recordIndex=2, moment=2021/05/10 10:30, author=null, text=I am your father",OK
-2021-06-03 20:50:57.037,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegativeShout,2615,"[2] recordIndex=3, moment=2021/05/10 10:30, author=Kylo Ren, text=null",OK
-2021-06-03 20:51:00.912,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegativeShout,3191,"[3] recordIndex=4, moment=2021/05/10 10:30, author=Kylo Ren, text=I am your cialis",OK
