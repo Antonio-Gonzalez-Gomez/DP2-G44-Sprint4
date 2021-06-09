@@ -1,0 +1,16 @@
+acme\testing\manager\task\ManagerTaskDeleteTest.class
+acme\testing\SignUpTest.class
+acme\testing\AcmeOneTest.class
+acme\testing\AcmeTest.class
+acme\testing\anonymous\shout\AnonymousShoutCreateTest.class
+acme\testing\administrator\word\AdministratorWordDeleteTest.class
+acme\testing\anonymous\task\AnonymousTaskListTest.class
+acme\testing\authenticated\task\AuthenticatedTaskListTest.class
+acme\testing\administrator\word\AdministratorWordCreateTest.class
+acme\testing\administrator\word\AdministratorWordListTest.class
+acme\testing\anonymous\shout\AnonymousShoutListTest.class
+acme\testing\manager\task\ManagerTaskCreateTest.class
+acme\testing\manager\task\ManagerTaskListTest.class
+acme\testing\administrator\spamfilter\AdministratorSpamFilterUpdateTest.class
+acme\testing\administrator\dashboard\AdministratorDashboardShowTest.class
+acme\testing\manager\task\ManagerTaskUpdateTest.class
