@@ -1,5 +1,5 @@
 /*
- * AdministratorDashboardRepository.java
+l * AdministratorDashboardRepository.java
  *
  * Copyright (C) 2012-2021 Rafael Corchuelo.
  *
@@ -20,40 +20,15 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AdministratorDashboardRepository extends AbstractRepository {
 
-	@Query("select avg(t.executionPeriod) from Task t")
-	Double averageTaskExecutionPeriod();
 
-	@Query(value = "select STD(t.execution_period) from Task t", nativeQuery = true)
-	Double deviationTaskExecutionPeriod();
 
-	@Query("select min(t.executionPeriod) from Task t")
-	Double minimumTaskExecutionPeriod();
+	@Query(value = "select STD(d.money_amount) from Dude d where d.money_currency = '€' ", nativeQuery = true)
+	Double devitationmoneydude();
 
-	@Query("select max(t.executionPeriod) from Task t")
-	Double maximumTaskExecutionPeriod();
 
-	@Query("select avg(t.workload) from Task t")
-	Double averageTaskWorkload();
 
-	@Query(value = "select STD(t.workload) from Task t", nativeQuery = true)
-	Double deviationTaskWorkload();
-	
-	@Query("select min(t.workload) from Task t")
-	Double minimumTaskWorkload();
+	@Query("select 1.0 * count(a) / (select count(b) from Dude b) from Dude a where a.shoutisdude = true")
+	Double ratioshoutsdude();
 
-	@Query("select max(t.workload) from Task t")
-	Double maximumTaskWorkload();
-
-	@Query("select 1.0 * count(a) / (select count(b) from Task b) from Task a where a.privacy = false")
-	Double ratioOfPublicTasks();
-
-	@Query("select 1.0 * count(a) / (select count(b) from Task b) from Task a where a.privacy = true")
-	Double ratioOfPrivateTasks();
-
-	@Query("select 1.0 * count(a) / (select count(b) from Task b) from Task a where a.finished = true")
-	Double ratioOfFinishedTasks();
-
-	@Query("select 1.0 * count(a) / (select count(b) from Task b) from Task a where a.finished = false")
-	Double ratioOfUnfinishedTasks();
 
 }

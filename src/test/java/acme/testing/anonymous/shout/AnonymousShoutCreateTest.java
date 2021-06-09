@@ -10,16 +10,23 @@ public class AnonymousShoutCreateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources="/anonymous/shout/create-positive-shout.csv", encoding = "utf-8", numLinesToSkip=1)
 	@Order(10)
-	public void createPositiveShout(final int recordIndex, final String moment, final String author, final String text) {
+	public void createPositiveShout(final int recordIndex, final String moment, final String author, final String text, final String pattern, 
+		final String currency, final Double amount, final String info) {
 
 		super.clickOnMenu("Anonymous", "Create Shouts");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
+		super.fillInputBoxIn("info", info);
+		super.fillInputBoxIn("dude.pattern", pattern);
+		super.fillInputBoxIn("dude.money.currency", currency);
+		super.fillInputBoxIn("dude.money.amount", amount.toString());
+		
 		super.clickOnSubmitButton("Create");
 		
 		super.clickOnMenu("Anonymous", "List Shouts");
 		
+		super.checkColumnHasValue(recordIndex, 0, moment);
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
 	}

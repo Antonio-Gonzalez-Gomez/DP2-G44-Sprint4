@@ -19,5 +19,14 @@ anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.text = Texto
 anonymous.shout.form.button.create = Crear
 anonymous.shout.form.button.return = Volver
+anonymous.shout.list.label.dude.pattern = Patron
+anonymous.shout.list.label.dude.money.currency = Divisa
+anonymous.shout.list.label.dude.money.amount = Cantidad
+anonymous.shout.form.label.dude.pattern = Patron
+anonymous.shout.form.label.dude.money.currency = Divisa
+anonymous.shout.form.label.dude.money.gamount = Cantidad
+anonymous.shout.form.label.dude.shoutisdude = Es dude
 
 anonymous.shout.form.error.text_spam = Contiene demasiadas palabras de spam
+anonymous.shout.form.error.currency = Introduzca sólo una de las divisas disponibles ($ o €)
+anonymous.shout.form.error.amount = Introduzca sólo una de las divisas disponibles ($ o €)

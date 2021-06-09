@@ -45,13 +45,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, //
-			"averageTaskExecutionPeriod", "deviationTaskExecutionPeriod", // 
-			"minimumTaskExecutionPeriod", "maximumTaskExecutionPeriod", //
-			"averageTaskWorkload", "deviationTaskWorkload", //
-			"minimumTaskWorkload", "maximumTaskWorkload", //
-			"ratioOfPublicTasks", "ratioOfPrivateTasks", //
-			"ratioOfFinishedTasks", "ratioOfUnfinishedTasks");
+		request.unbind(entity, model, "devitationmoneydude","ratioshoutsdude");
 	}
 
 	@Override
@@ -59,45 +53,19 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert request != null;
 
 		Dashboard result;
-		final Double averageTaskExecutionPeriod;
-		final Double deviationTaskExecutionPeriod;
-		final Double minimumTaskExecutionPeriod;
-		final Double maximumTaskExecutionPeriod;
-		final Double averageTaskWorkload;
-		final Double deviationTaskWorkload;
-		final Double minimumTaskWorkload;
-		final Double maximumTaskWorkload;
-		final Double ratioOfPublicTasks;
-		final Double ratioOfPrivateTasks;
-		final Double ratioOfFinishedTasks;
-		final Double ratioOfUnfinishedTasks;
+		final Double devitationmoneydude;
+		final Double ratioshoutsdude;
+		
 
-		averageTaskExecutionPeriod = this.repository.averageTaskExecutionPeriod();
-		deviationTaskExecutionPeriod = this.repository.deviationTaskExecutionPeriod();
-		minimumTaskExecutionPeriod = this.repository.minimumTaskExecutionPeriod();
-		maximumTaskExecutionPeriod = this.repository.maximumTaskExecutionPeriod();
-		averageTaskWorkload = this.repository.averageTaskWorkload();
-		deviationTaskWorkload = this.repository.deviationTaskWorkload();
-		minimumTaskWorkload = this.repository.minimumTaskWorkload();
-		maximumTaskWorkload = this.repository.maximumTaskWorkload();
-		ratioOfPublicTasks = this.repository.ratioOfPublicTasks();
-		ratioOfPrivateTasks = this.repository.ratioOfPrivateTasks();
-		ratioOfFinishedTasks = this.repository.ratioOfFinishedTasks();
-		ratioOfUnfinishedTasks = this.repository.ratioOfUnfinishedTasks();
+		devitationmoneydude = this.repository.devitationmoneydude();
+		System.out.println("El deviation es:" + devitationmoneydude);
+		ratioshoutsdude = this.repository.ratioshoutsdude();
+	
 
 		result = new Dashboard();
-		result.setAverageTaskExecutionPeriod(averageTaskExecutionPeriod);
-		result.setDeviationTaskExecutionPeriod(deviationTaskExecutionPeriod);
-		result.setMinimumTaskExecutionPeriod(minimumTaskExecutionPeriod);
-		result.setMaximumTaskExecutionPeriod(maximumTaskExecutionPeriod);
-		result.setAverageTaskWorkload(averageTaskWorkload);
-		result.setDeviationTaskWorkload(deviationTaskWorkload);
-		result.setMinimumTaskWorkload(minimumTaskWorkload);
-		result.setMaximumTaskWorkload(maximumTaskWorkload);
-		result.setRatioOfPublicTasks(ratioOfPublicTasks);
-		result.setRatioOfPrivateTasks(ratioOfPrivateTasks);
-		result.setRatioOfFinishedTasks(ratioOfFinishedTasks);
-		result.setRatioOfUnfinishedTasks(ratioOfUnfinishedTasks);
+		result.setDevitationmoneydude(devitationmoneydude);
+		result.setRatioshoutsdude(ratioshoutsdude);
+
 
 		return result;
 	}

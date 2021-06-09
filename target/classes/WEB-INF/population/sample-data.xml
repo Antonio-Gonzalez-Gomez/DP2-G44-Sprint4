@@ -19,16 +19,54 @@
 
 	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>
 	
+	<!-- Dudes -->
+	
+	<bean id="dude01" class="acme.entities.dudes.Dude">
+		<property name="createShout" value="2021/05/04 12:30"/>
+		<property name="pattern" value="20210601"/>
+		<property name="money" value="€ 50.5"/>
+		<property name="shoutisdude" value="true"/>
+	</bean>
+	
+	<bean id="dude02" class="acme.entities.dudes.Dude">
+		<property name="createShout" value="2021/05/04 12:30"/>
+		<property name="pattern" value="20210605"/>
+		<property name="money" value="$ 57.5"/>
+		<property name="shoutisdude" value="false"/>
+	</bean>
+	
+	<bean id="dude03" class="acme.entities.dudes.Dude">
+		<property name="createShout" value="2021/05/04 12:30"/>
+		<property name="pattern" value="20210601"/>
+		<property name="money" value="€ 64.5"/>
+		<property name="shoutisdude" value="true"/>
+	</bean>
+	
+	<bean id="dude04" class="acme.entities.dudes.Dude">
+		<property name="createShout" value="2021/05/04 12:30"/>
+		<property name="pattern" value="20210601"/>
+		<property name="money" value="$ 55.5"/>
+		<property name="shoutisdude" value="true"/>
+	</bean>
+	
+	<bean id="dude05" class="acme.entities.dudes.Dude">
+		<property name="createShout" value="2021/05/04 12:30"/>
+		<property name="pattern" value="20210601"/>
+		<property name="money" value="€ 67.5"/>
+		<property name="shoutisdude" value="true"/>
+	</bean>
 	<!-- Shouts -->
 	
 	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="dude" ref="dude01"/>
 		<property name="moment" value="2021/02/13 19:39"/>
 		<property name="author" value="John Doe"/>
-		<property name="text" value="I'm happy!"/>
+		<property name="text" value="I'm not happy!"/>
 		<property name="info"><null/></property>	
 	</bean>
 	
 	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="dude" ref="dude02"/>
 		<property name="moment" value="2019/08/09 15:55"/>
 		<property name="author" value="Jane Doe"/>
 		<property name="text" value="I'm the master of my room!"/>
@@ -79,11 +117,10 @@
 	
 	<bean id="shout09" class="acme.entities.shouts.Shout">
 		<property name="author" value="Luke Skywalker"/>
-		<property name="text" value="May the 4th be with you"/>
-		<property name="moment" value="2021/05/04 12:30"/>
+		<property name="text" value="Force with you"/>
+		<property name="moment" value="2021/06/04 12:30"/>
 		<property name="info" value="http://www.sample-app.com"/>
 	</bean>
-	
 	<!-- Authenticated -->
 	
 	<bean name="authenticated1UserAccount" class="acme.framework.entities.UserAccount">

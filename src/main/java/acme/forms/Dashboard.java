@@ -27,18 +27,8 @@ public class Dashboard implements Serializable {
 
 	// Attributes -------------------------------------------------------------
 
-	Double						averageTaskExecutionPeriod;
-	Double						deviationTaskExecutionPeriod;
-	Double						minimumTaskExecutionPeriod;
-	Double						maximumTaskExecutionPeriod;
-	Double						averageTaskWorkload;
-	Double						deviationTaskWorkload;
-	Double						minimumTaskWorkload;
-	Double						maximumTaskWorkload;
-	Double						ratioOfPublicTasks;
-	Double						ratioOfPrivateTasks;
-	Double						ratioOfFinishedTasks;
-	Double						ratioOfUnfinishedTasks;
+	Double						devitationmoneydude;
+	Double						ratioshoutsdude;
 
 	// Derived attributes -----------------------------------------------------
 

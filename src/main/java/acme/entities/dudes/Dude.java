@@ -1,4 +1,4 @@
-package acme.entities.shouts;
+package acme.entities.dudes;
 
 import java.util.Date;
 
@@ -6,13 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
-import org.hibernate.validator.constraints.URL;
-
-import acme.entities.dudes.Dude;
+import acme.entities.shouts.Shout;
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,31 +18,32 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Shout extends DomainEntity {
+public class Dude extends DomainEntity{
 
-	// Serialisation identifier -----------------------------------------------
 
 	protected static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	protected Date				moment;
-
-	@NotBlank
-	protected String			author;
-
-	@NotBlank
-	protected String			text;
+	protected  Date createShout;
 	
-	@URL
-	protected String			info;
+	@NotNull
+	protected String pattern;
+	
+	@NotNull
+	protected Money  money;
+
+	@NotNull
+	protected Boolean	shoutisdude;
+	
+	
 
 	// Derived attributes -----------------------------------------------------
 
-	// Relationships ----------------------------------------------------------
+	// Relationships ---------------------------------------------------------- 
 	@Lob
-	protected Dude dude;
+	protected Shout shout;
 }
