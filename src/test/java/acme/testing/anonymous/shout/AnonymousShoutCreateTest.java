@@ -16,6 +16,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest{
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
+		
 		super.clickOnSubmitButton("Create");
 		
 		super.clickOnMenu("Anonymous", "List Shouts");
