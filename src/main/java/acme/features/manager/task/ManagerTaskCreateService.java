@@ -46,7 +46,11 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			errors.state(request, !this.filter.validate(entity.getTitle()), "title", "manager.task.form.error.title_spam");
 		if (this.filter.validate(entity.getDescription()))
 			errors.state(request, !this.filter.validate(entity.getDescription()), "description", "manager.task.form.error.description_spam");
-		
+		System.out.println("HOLA NO HE ENTRAO" + entity.getWorkload());
+		if (entity.getWorkload() != null && entity.getWorkload()<0) {
+			System.out.println("HOLA HE ENTRAO");
+			errors.state(request, entity.getWorkload()>0, "workload", "manager.task.form.error.workload");
+			}
 		assert errors != null;
 		
 		//Asignación de execution period

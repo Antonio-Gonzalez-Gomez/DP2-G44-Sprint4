@@ -9,6 +9,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -49,6 +50,7 @@ public class Task extends DomainEntity {
     @Temporal(TemporalType.TIMESTAMP)
     protected Date endingDate;
     
+    @Min(0)
     protected Double workload;
     
     @NotNull

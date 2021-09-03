@@ -8,6 +8,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.URL;
 
@@ -30,10 +31,12 @@ public class Shout extends DomainEntity {
 	@Past
 	@NotNull
 	protected Date				moment;
-
+	
+	@Size(min = 5, max = 25, message = "Min 5 characters, max 25")
 	@NotBlank
 	protected String			author;
-
+	
+	@Size(max = 100, message = "Max 100 characters")
 	@NotBlank
 	protected String			text;
 	
