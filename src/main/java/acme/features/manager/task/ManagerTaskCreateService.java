@@ -65,6 +65,9 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		//Validación de workload previo y asignación de workload real
 		final Double false_workload = entity.getFakeWorkload();
 		if(false_workload!=null) {
+			if (false_workload <= 0) {
+				errors.state(request, false_workload > 0, "fakeWorkload", "manager.task.form.error.negative");
+			}
 			final BigDecimal bd = new BigDecimal(String.valueOf(false_workload));
 			final BigDecimal decimals = bd.subtract(new BigDecimal(bd.intValue()));
 			if(!errors.hasErrors("incorrect_decimals")) {
